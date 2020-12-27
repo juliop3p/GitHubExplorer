@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Explore repositórios no GitHub</h1>
+
+  <div class="input">
+    <input
+      type="text"
+      name="repository"
+      [(ngModel)]="repositoryName"
+      [class.input-error]="isEmpty"
+    />
+    <button class="pointer" (click)="handleClick()">Pesquisar</button>
+  </div>
+
+  <div class="repos">
+    <app-card-repo
+      *ngFor="let repo of repositories"
+      [repository]="repo"
+    ></app-card-repo>
+  </div>
+</div>

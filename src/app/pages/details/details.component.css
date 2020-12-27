@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: var(--spacing-5);
+}
+
+.header img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  margin-right: var(--spacing-2);
+}
+
+.header h3 {
+  font-size: 32px;
+  color: #555;
+}
+
+.header p {
+  font-size: 16px;
+  color: #a1a1a1;
+}
+
+.status-info {
+  display: flex;
+  margin-bottom: var(--spacing-5);
+}
+
+.status-info .status {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: var(--spacing-5);
+}
+
+.status-info .status strong {
+  font-size: var(--spacing-5);
+  color: #555;
+}
+
+.status-info .status span {
+  color: #555;
+}
+
+.border-bottom {
+  width: 100%;
+  margin-top: 8px;
+  border-bottom: 5px solid #555;
+}

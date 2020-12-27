@@ -1,0 +1,6 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--spacing-3) 0 var(--spacing-5) 0;
+}

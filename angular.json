@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "github-explorer"
+    }
+  },
+  "defaultProject": "github-explorer",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,30 @@
+<div class="container" *ngIf="repository">
+  <div class="header">
+    <div>
+      <img src="{{ repository.owner.avatar_url }}" alt="Avatar" />
+    </div>
+    <div>
+      <h3>{{ repository.full_name }}</h3>
+      <p>{{ repository.description }}</p>
+    </div>
+  </div>
+  <div class="status-info">
+    <div class="status">
+      <strong>{{ repository.stargazers_count }}</strong>
+      <span>Stars</span>
+    </div>
+    <div class="status">
+      <strong>{{ repository.forks_count }}</strong>
+      <span>Forks</span>
+    </div>
+    <div class="status">
+      <strong>{{ repository.open_issues_count }}</strong>
+      <span>Open Issues</span>
+      <div class="border-bottom"></div>
+    </div>
+  </div>
+
+  <div class="info">
+    <app-card-info *ngFor="let issue of issues" [issue]="issue"></app-card-info>
+  </div>
+</div>

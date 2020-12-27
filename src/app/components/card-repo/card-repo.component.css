@@ -1,0 +1,25 @@
+.card {
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: var(--spacing-3);
+  padding: var(--spacing-3);
+  border-radius: var(--spacing-1);
+}
+
+.card div:nth-child(3) {
+  margin-left: auto;
+}
+
+.card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: var(--spacing-2);
+}
+
+.card p,
+.card i {
+  color: #b1b1b1;
+}

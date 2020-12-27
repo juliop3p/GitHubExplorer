@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: var(--spacing-3);
+  padding: var(--spacing-3);
+  border-radius: var(--spacing-1);
+}
+
+.card strong {
+  color: #555;
+}
+
+.card p {
+  color: #a1a1a1;
+}
